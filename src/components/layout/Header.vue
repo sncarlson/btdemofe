@@ -25,7 +25,7 @@
             <router-link class="nav-link active" aria-current="page" to="/">Home</router-link>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link active" aria-current="page" to="/about">Ping</router-link>
+            <router-link class="nav-link active" aria-current="page" to="/ping">Ping</router-link>
           </li>
         </ul>
       </div>
