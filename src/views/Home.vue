@@ -14,17 +14,14 @@ export default {
   }),
 
   mounted() {
-    let braintreeScript = document.createElement("script");
-    braintreeScript.setAttribute(
-      "src",
-      "https://js.braintreegateway.com/web/dropin/1.25.0/js/dropin.min.js"
-    );
-    braintreeScript.onload = () => {
+    //let braintreeScript = document.createElement("script");
+    var braintreeScript = require('braintree-web-drop-in')
+
       console.log("BT Loaded");
 
       var button = document.querySelector("#submit-button");
 
-      braintreeScript.dropin.create(
+      braintreeScript.create(
         {
           authorization: "sandbox_g42y39zw_348pk9cgf3bgyw2b",
           selector: "#dropin-container",
@@ -39,6 +36,9 @@ export default {
           });
         }
       );
+
+    braintreeScript.onload = () => {
+
     };
 
     document.head.appendChild(braintreeScript);
