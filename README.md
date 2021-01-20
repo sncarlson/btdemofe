@@ -1,4 +1,4 @@
-# Steve's Braintree Demo Front End (btdemofe)
+# Steve's Braintree Demo Front End (btdemofe) 
 
 ## Project setup
 ```
