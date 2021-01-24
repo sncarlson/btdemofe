@@ -1,5 +1,5 @@
 <template>
-<!--
+  <!--
   <div id="nav">
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
@@ -7,7 +7,9 @@
 -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-      <router-link class="navbar-brand" aria-current="page" to="/">Steve's Demo</router-link>
+      <router-link class="navbar-brand" aria-current="page" to="/"
+        >Steve's Demo</router-link
+      >
       <button
         class="navbar-toggler"
         type="button"
@@ -27,7 +29,14 @@
           </li>
           -->
           <li class="nav-item">
-            <router-link class="nav-link active" aria-current="page" to="/ping">Ping</router-link>
+            <router-link class="nav-link active" aria-current="page" to="/cart"
+              >Cart</router-link
+            >
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link active" aria-current="page" to="/ping"
+              >Ping</router-link
+            >
           </li>
         </ul>
       </div>
@@ -37,7 +46,7 @@
 
 <script>
 export default {
-  name: "Header"
+  name: "Header",
 };
 </script>
 

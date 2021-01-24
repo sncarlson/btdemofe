@@ -20,8 +20,9 @@ export default {
 
 
 <style>
-#app {
+#app { /*
   text-align: center;
+  */
 }
 
 #nav {
